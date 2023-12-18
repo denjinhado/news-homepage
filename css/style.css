@@ -1,0 +1,127 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+  font: inherit;
+}
+.grid-flow {
+  display: grid;
+  align-content: start;
+  gap: 2rem;
+}
+html {
+  font-family: "Inter", sans-serif;
+}
+p {
+  font-size: 15px;
+}
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.link {
+  text-decoration: none;
+  margin-right: 2rem;
+  color: hsl(236, 13%, 42%);
+}
+.link:last-of-type {
+  margin-right: 0;
+}
+header,
+.container,
+.cards {
+  width: 65rem;
+  margin: 4rem auto;
+}
+.container {
+  display: grid;
+  grid-template-columns: repeat(2, 65% 35%);
+}
+.main {
+  margin-right: 2rem;
+}
+.img-main {
+  width: 100%;
+}
+.text-main {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  h1 {
+    font-size: 3.3rem;
+    font-weight: 700;
+  }
+  p {
+    color: hsl(236, 13%, 42%);
+  }
+}
+button {
+  text-align: center;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  border-style: none;
+  color: white;
+  background-color: hsl(5, 85%, 63%);
+  width: 60%;
+  height: 3rem;
+  font-size: 14px;
+  padding: 1rem;
+  cursor: pointer;
+}
+.side {
+  background-color: hsl(240, 100%, 5%);
+  padding: 1.4rem;
+  h1 {
+    font-size: 3rem;
+    font-weight: 700;
+    color: hsl(35, 77%, 62%);
+  }
+  h3 {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: white;
+    margin-bottom: 1rem;
+  }
+  p {
+    color: hsl(236, 13%, 42%);
+    margin-bottom: 1.3rem;
+  }
+}
+.side-element {
+  border-bottom: 1px hsl(236, 13%, 42%) solid;
+}
+.side-element:last-of-type {
+  border-bottom: none;
+}
+.cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+.card-element {
+  display: flex;
+  align-items: center;
+  gap: 1.3rem;
+}
+.img-card {
+  width: 7rem;
+}
+.text-card {
+  h2 {
+    color: hsl(233, 8%, 79%);
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 0.8rem;
+  }
+  h3 {
+    font-weight: 700;
+    font-size: 1.1rem;
+    margin-bottom: 0.8rem;
+  }
+  p {
+    color: hsl(236, 13%, 42%);
+  }
+}
